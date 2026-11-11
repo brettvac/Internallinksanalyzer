@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>COM_INTERNALLINKSANALYZER</name>
+    <author>Brett</author>
+    <creationDate>2026-09-04</creationDate>
+    <copyright>(C) 2026 Brett</copyright>
+    <license>GNU General Public License version 2</license>
+    <version>1.0</version>
+    <description>COM_INTERNALLINKSANALYZER_DESCRIPTION</description>
+    <namespace path="src">Naftee\Component\Internallinksanalyzer</namespace>
+    <scriptfile>script.php</scriptfile>
+    <administration>   
+        <menu>COM_INTERNALLINKSANALYZER</menu>
+        <files folder="administrator/components/com_internallinksanalyzer">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <filename>access.xml</filename>
+        </files>
+        <languages folder="administrator/components/com_internallinksanalyzer/language">
+            <language tag="en-GB">en-GB/com_internallinksanalyzer.ini</language>
+            <language tag="en-GB">en-GB/com_internallinksanalyzer.sys.ini</language>
+        </languages>    
+    </administration>
+    <changelogurl>https://raw.githubusercontent.com/brettvac/internallinksanalyzer/refs/heads/main/update/changelog.xml</changelogurl>
+    <updateservers>
+      <server type="extension" name="Internal Links Analyzer Updates">https://raw.githubusercontent.com/brettvac/internallinksanalyzer/refs/heads/main/update/updates.xml</server>
+    </updateservers>
+</extension>
